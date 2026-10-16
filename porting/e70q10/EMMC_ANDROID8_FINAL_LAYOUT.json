@@ -1,0 +1,136 @@
+{
+  "review_only": false,
+  "device_serial": "PP1A1GK166561",
+  "cid": "15010038474d45345201bbd3fe618400",
+  "sector_size": 512,
+  "device_sectors": 15269888,
+  "mode": "retain-recovery-unified",
+  "absent_primary_slots": [
+    4
+  ],
+  "preserve_userarea_bytes": [
+    512,
+    53477376
+  ],
+  "partitions": [
+    {
+      "number": 1,
+      "start": 104448,
+      "sectors": 65536,
+      "type": "83",
+      "role": "boot",
+      "end": 169983,
+      "bytes": 33554432,
+      "mib": 32.0
+    },
+    {
+      "number": 2,
+      "start": 38912,
+      "sectors": 65536,
+      "type": "83",
+      "role": "original_recovery",
+      "end": 104447,
+      "bytes": 33554432,
+      "mib": 32.0
+    },
+    {
+      "number": 3,
+      "start": 169984,
+      "sectors": 15099904,
+      "type": "05",
+      "role": "extended",
+      "end": 15269887,
+      "bytes": 7731150848,
+      "mib": 7373.0
+    },
+    {
+      "number": 5,
+      "start": 172032,
+      "sectors": 2097152,
+      "type": "83",
+      "role": "system",
+      "ebr": 169984,
+      "end": 2269183,
+      "bytes": 1073741824,
+      "mib": 1024.0
+    },
+    {
+      "number": 6,
+      "start": 2271232,
+      "sectors": 131072,
+      "type": "83",
+      "role": "cache",
+      "ebr": 2269184,
+      "end": 2402303,
+      "bytes": 67108864,
+      "mib": 64.0
+    },
+    {
+      "number": 7,
+      "start": 2404352,
+      "sectors": 12326912,
+      "type": "83",
+      "role": "userdata",
+      "ebr": 2402304,
+      "end": 14731263,
+      "bytes": 6311378944,
+      "mib": 6019.0
+    },
+    {
+      "number": 8,
+      "start": 14733312,
+      "sectors": 524288,
+      "type": "83",
+      "role": "vendor",
+      "ebr": 14731264,
+      "end": 15257599,
+      "bytes": 268435456,
+      "mib": 256.0
+    },
+    {
+      "number": 9,
+      "start": 15259648,
+      "sectors": 8192,
+      "type": "83",
+      "role": "misc",
+      "ebr": 15257600,
+      "end": 15267839,
+      "bytes": 4194304,
+      "mib": 4.0
+    }
+  ],
+  "ebr_sectors": [
+    169984,
+    2269184,
+    2402304,
+    14731264,
+    15257600
+  ],
+  "validation": "U-Boot reference DOS numbering + util-linux sfdisk and partx; no physical test",
+  "layout_version": "e70q10-emmc-v1",
+  "layout_status": "final",
+  "flash_ready": false,
+  "finalized_date": "2026-10-01",
+  "physical_validation": "pending",
+  "capacity_evidence": {
+    "ext_csd_sec_count": 15269888,
+    "sysfs_sectors": 15269888,
+    "backup_bytes": 7818182656,
+    "external_sd_bytes": 15931539456,
+    "emmc_capacity_class_gb": 8,
+    "external_sd_capacity_class_gb": 16
+  },
+  "image_partition_size_bytes": {
+    "boot": 33554432,
+    "system": 1073741824,
+    "vendor": 268435456,
+    "cache": 67108864,
+    "userdata": 6311378944,
+    "misc": 4194304
+  },
+  "misc_original_bytes": 4186112,
+  "tail_reserve": {
+    "start": 15267840,
+    "sectors": 2048
+  }
+}

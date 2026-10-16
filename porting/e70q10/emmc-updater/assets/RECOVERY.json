@@ -1,0 +1,7 @@
+{
+  "kernel_sha256": "f630012b09efc4b80fdaab2961192084c8bb1f75bf0331d19c270b6e9fe782be",
+  "kernel_source": "porting/e70q10/e70q10-agl-stockpath-20260827-r3-ramboot.img",
+  "kernel_matches_original_installer": true,
+  "table_source": "20260923 emmc.part00 + final layout + preserved table generator",
+  "table_original_mbr_sha256": "faadfd68cc539b163086ab9ef103438346f28c8dfd561870a644d7822446e184"
+}

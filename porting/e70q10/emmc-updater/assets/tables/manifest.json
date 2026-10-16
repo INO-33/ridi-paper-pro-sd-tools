@@ -1,0 +1,82 @@
+{
+  "layout_version": "e70q10-emmc-v1",
+  "table_files_ready": true,
+  "installation_package_ready": false,
+  "physical_validation": "pending",
+  "device_serial": "PP1A1GK166561",
+  "cid": "15010038474d45345201bbd3fe618400",
+  "device_sectors": 15269888,
+  "sector_size": 512,
+  "input_layout_sha256": "9c315e0282149079c377be4f542f6af6ceac9c62cff1e5ccf1ff0f79551f7540",
+  "original_mbr_sha256": "faadfd68cc539b163086ab9ef103438346f28c8dfd561870a644d7822446e184",
+  "preserved_mbr_ranges": [
+    [
+      0,
+      446
+    ],
+    [
+      462,
+      478
+    ],
+    [
+      510,
+      512
+    ]
+  ],
+  "preserved_userarea_range_bytes": [
+    512,
+    53477376
+  ],
+  "metadata_write_order": [
+    169984,
+    2269184,
+    2402304,
+    14731264,
+    15257600,
+    0
+  ],
+  "files": [
+    {
+      "file": "mbr.sector0.bin",
+      "start_sector": 0,
+      "sector_count": 1,
+      "bytes": 512,
+      "sha256": "a7d7df6bf90f37cd4027940c01c72e9353cb9b6b86791f12674669ad6125d458"
+    },
+    {
+      "file": "ebr.sector169984.bin",
+      "start_sector": 169984,
+      "sector_count": 1,
+      "bytes": 512,
+      "sha256": "dd1e3735292d394bea3375133334efb3ecd604e2477bd358a0f428b8d926d73a"
+    },
+    {
+      "file": "ebr.sector2269184.bin",
+      "start_sector": 2269184,
+      "sector_count": 1,
+      "bytes": 512,
+      "sha256": "7d35c78c1c4bedaae05ad37cf3e9a88a5849f7399b29decff415800b43449b76"
+    },
+    {
+      "file": "ebr.sector2402304.bin",
+      "start_sector": 2402304,
+      "sector_count": 1,
+      "bytes": 512,
+      "sha256": "e81f8c9e9d1f903daa665414228702f95c561d3254bb31a6555301f5429a8c0f"
+    },
+    {
+      "file": "ebr.sector14731264.bin",
+      "start_sector": 14731264,
+      "sector_count": 1,
+      "bytes": 512,
+      "sha256": "b4f530891808d08444de7440db398b466352adc111bc7438ceadf220d07ff09f"
+    },
+    {
+      "file": "ebr.sector15257600.bin",
+      "start_sector": 15257600,
+      "sector_count": 1,
+      "bytes": 512,
+      "sha256": "ad89f4ffc96aeac099aab7ec7d7fd8fa4316802fc724c59e79236659c7b1e467"
+    }
+  ]
+}

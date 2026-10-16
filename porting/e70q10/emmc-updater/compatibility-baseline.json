@@ -1,0 +1,10 @@
+{
+  "device_serial": "PP1A1GK166561",
+  "cid": "15010038474d45345201bbd3fe618400",
+  "kernel_release": "4.9.17-ga48053ed-dirty",
+  "module_vermagic": "4.9.17-ga48053ed-dirty SMP preempt mod_unload modversions ARMv7 p2v8 ",
+  "boot_raw_sha256": "9354cf2df25e04a8e20b9e6cf497135960add74d1b7bd73c5a286cc8d726c044",
+  "android_sdk": 26,
+  "android_device": "e70q10",
+  "abi": "armeabi-v7a"
+}
