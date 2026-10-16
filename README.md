@@ -3,8 +3,8 @@
 RIDI PAPER PRO의 SD 준비, eMMC 업데이트·업그레이드, 백업과 Windows GUI 배포판
 생성을 담당하는 저장소입니다. Android/Chromium 컴파일 환경과 분리해 관리합니다.
 
-**전체 프로젝트:** [메인 manifest 저장소](https://github.com/INO-33/RIDI_ANDROID8_MANIFEST)
- · **Android 빌드 환경:** [빌드 도구 저장소](https://github.com/INO-33/RIDI_ANDROID8_BUILD_TOOLS)
+**전체 프로젝트:** [메인 manifest 저장소](https://github.com/INO-33/ridi-paper-pro)
+ · **Android 빌드 환경:** [빌드 도구 저장소](https://github.com/INO-33/ridi-paper-pro-dev-tools)
 
 ## 구성
 
