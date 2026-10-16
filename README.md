@@ -23,6 +23,7 @@ OS 이미지와 전체 기기 백업은 별도 산출물입니다. 이 저장소
 
 Python 3.10 이상과 Tk가 필요합니다. GUI의 실제 fastboot 동작에는 해당 OS용
 platform-tools와 기기 드라이버가 필요합니다.
+Linux 설치·검사 명령은 메인 저장소의 [개발환경 안내](https://github.com/INO-33/ridi-paper-pro/blob/checkpoint-20261016/DEVELOPMENT.md)에 있습니다.
 
 ```sh
 python3 verify_assets.py
@@ -40,8 +41,12 @@ SD 준비 작업은 선택한 SD를 포맷하므로 대상 디스크를 확인�
 입력으로 받습니다. 그 폴더의 `runtime.zip`, 라이선스와 GUI 소스를 사용해
 Windows에서 실행파일을 만듭니다.
 
+현재 소스에는 검증된 `runtime.zip`이 이미 포함되어 있습니다. 새 GUI 코드를 빌드할
+때에는 아래 `--app-dir`에 이 저장소의 `porting/e70q10/emmc-tool` 폴더를 지정하면 됩니다.
+기존 외부 seed ZIP이 필요한 `build_gui_bundle.py`는 RAM 런타임 자체를 재생성할 때 사용합니다.
+
 ```powershell
-py -3 .\porting\e70q10\emmc-tool\build_windows.py --app-dir C:\PaperProGUI --platform-tools C:\platform-tools --output C:\PaperProRelease
+py -3 .\porting\e70q10\emmc-tool\build_windows.py --app-dir .\porting\e70q10\emmc-tool --platform-tools C:\platform-tools --output C:\PaperProRelease
 ```
 
 Windows 빌드는 Windows에서 실행합니다. 자세한 준비 조건과 배포 파일 구성은
