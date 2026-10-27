@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 import pathlib as P, subprocess as S, hashlib as H, json, struct, gzip, shutil, os
-ROOT=P.Path('/home/juwon/ridi'); SRC=ROOT/'porting/e70q10/emmc-installer'
+ROOT=P.Path(os.environ.get('RIDI_WORKSPACE', P.Path(__file__).resolve().parents[3])); SRC=ROOT/'porting/e70q10/emmc-installer'
 OUT=ROOT/'deliverables/e70q10-emmc-android8-20261001'; OUT.mkdir(exist_ok=True)
 WORK=OUT/'.build'
 if WORK.exists():shutil.rmtree(WORK)
 WORK.mkdir()
-PRODUCT=P.Path('/media/juwon/build/android-out/e70q10_reference_agl_stockpath/target/product/e70q10')
+PRODUCT=P.Path(os.environ.get('RIDI_PRODUCT_OUT', ROOT/'android-out/e70q10_reference/target/product/e70q10'))
 HOST=PRODUCT.parents[2]/'host/linux-x86/bin'
 BACK=P.Path('/media/juwon/build/리디백업/backups/e70q10-PP1A1GK166561-20260923-full-emmc')
 TABLE=ROOT/'deliverables/emmc-20261001-final-partition-table'

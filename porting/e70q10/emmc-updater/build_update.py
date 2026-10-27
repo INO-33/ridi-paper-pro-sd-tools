@@ -2,9 +2,10 @@
 """Freeze boot/system/vendor, check target boot/module compatibility, make a pinned RAM updater."""
 from boot_image import prepare
 from selection import targets,control
-import argparse,gzip,hashlib,json,os,pathlib as P,shutil,struct,subprocess as S
+import os
+import argparse,gzip,hashlib,json,pathlib as P,shutil,struct,subprocess as S
 ROOT=P.Path(os.environ.get('RIDI_WORKSPACE', P.Path(__file__).resolve().parents[3]));SRC=ROOT/'porting/e70q10/emmc-updater';ASSETS=SRC/'assets';TABLE=ASSETS/'tables'
-PRODUCT=P.Path(os.environ.get('RIDI_PRODUCT_OUT', ROOT/'android-out/e70q10/target/product/e70q10'));HOST=PRODUCT.parents[2]/'host/linux-x86/bin'
+PRODUCT=P.Path(os.environ.get('RIDI_PRODUCT_OUT', ROOT/'android-out/e70q10_reference/target/product/e70q10'));HOST=PRODUCT.parents[2]/'host/linux-x86/bin'
 p=argparse.ArgumentParser();p.add_argument('--targets',default='all');p.add_argument('--manual',action='store_true');p.add_argument('--no-reboot',action='store_true');p.add_argument('--boot',type=P.Path,default=PRODUCT/'boot.img');p.add_argument('--system',type=P.Path,default=PRODUCT/'system.img');p.add_argument('--vendor',type=P.Path,default=PRODUCT/'vendor.img');p.add_argument('--out',type=P.Path,default=ROOT/'deliverables/e70q10-emmc-update-20261001-boot');a=p.parse_args()
 from runtime_assets import verify_assets
 verify_assets(ASSETS)
